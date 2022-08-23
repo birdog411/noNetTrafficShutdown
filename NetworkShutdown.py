@@ -59,7 +59,6 @@ lblSpeed = Label(root, font=('calibri', 59, 'bold'), background="black", foregro
 lblCountDown = Label(root, font=('calibri', 30, 'bold'), background="black", foreground="orange")
 
 netSpeed()
-# lbltext.config(text="Speed below 0.2Mb will start the countdown")
 lbltext.pack()
 lblSpeed.pack()
 lblCountDown.pack()
