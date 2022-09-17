@@ -8,14 +8,14 @@ import time
 oldSpeed = 0
 currentSpeed = 0
 speed = 0
-t = 600
+t = 1200
 count = 0
 timeformat = ""
 
 root = Tk()
 root.title("ShutDowner")
 root.geometry("500x200")
-root.resizable(0, 0)
+# root.resizable(0, 0)
 root.configure(bg='black')
 
 
@@ -50,7 +50,7 @@ def netSpeed():
 
         elif count > 10:
             lblCountDown.config(text=f"Network Traffic")
-            t = 600
+            t = 1200
             nodatacount = 0
 
 
@@ -59,6 +59,7 @@ lblSpeed = Label(root, font=('calibri', 59, 'bold'), background="black", foregro
 lblCountDown = Label(root, font=('calibri', 30, 'bold'), background="black", foreground="orange")
 
 netSpeed()
+# lbltext.config(text="Speed below 0.2Mb will start the countdown")
 lbltext.pack()
 lblSpeed.pack()
 lblCountDown.pack()
